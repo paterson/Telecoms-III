@@ -65,6 +65,7 @@ public class Client extends Node {
         try{
             String str = new String(names, "UTF-8");
             String[] parts = str.split("\n");
+            terminal.println("Received " + (parts.length - 1) + " names");
             batchTotal = (parts.length - 1) * Constants.MAX_AVERAGE_NAME_LENGTH;
             for (int i = 0; i < parts.length - 1; i++) {
                 String s = parts[i];
