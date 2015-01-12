@@ -51,7 +51,6 @@ public class BufferQueue {
     }
 
     public byte[] pop(int number) {
-        System.out.println("number:" + number);
         byte[] result = new byte[number * Constants.MAX_AVERAGE_NAME_LENGTH]; // average name will not exceed 20 chars long.
         int byteCount = 0;
         int count = 0;
